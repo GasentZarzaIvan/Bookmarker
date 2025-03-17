@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_biblioteca">
+
+    <fragment
+        android:id="@+id/navigation_biblioteca"
+        android:name="igz.tfg.bookmarker.ui.biblioteca.BibliotecaFragment"
+        android:label="@string/title_biblioteca"
+        tools:layout="@layout/fragment_biblioteca">
+        <action
+            android:id="@+id/action_navigation_biblioteca_to_navigation_editarLibroFragment"
+            app:destination="@id/navigation_editarLibroFragment" />
+        <action
+            android:id="@+id/action_navigation_biblioteca_to_nuevaSeccionDialogFragment"
+            app:destination="@id/nuevaSeccionDialogFragment" />
+        <action
+            android:id="@+id/action_navigation_biblioteca_to_libroFragment"
+            app:destination="@id/libroFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_buscar"
+        android:name="igz.tfg.bookmarker.ui.buscar.BuscarFragment"
+        android:label="@string/title_buscar"
+        tools:layout="@layout/fragment_buscar">
+        <action
+            android:id="@+id/action_navigation_buscar_to_navigation_edicionesFragment"
+            app:destination="@id/navigation_edicionesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_editarLibroFragment"
+        android:name="igz.tfg.bookmarker.ui.editarLibro.EditarLibroFragment"
+        android:label="Editar libro"
+        tools:layout="@layout/fragment_editar_libro">
+        <action
+            android:id="@+id/action_navigation_editarLibroFragment_to_nuevaSeccionDialogFragment"
+            app:destination="@id/nuevaSeccionDialogFragment" />
+        <argument
+            android:name="titulo"
+            android:defaultValue="Nuevo libro"
+            app:argType="string" />
+        <argument
+            android:name="edicion"
+            android:defaultValue="@null"
+            app:argType="igz.tfg.bookmarker.modelos.openlibrary.EdicionOL"
+            app:nullable="true" />
+        <argument
+            android:name="idLibro"
+            android:defaultValue="-1L"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_edicionesFragment"
+        android:name="igz.tfg.bookmarker.ui.ediciones.EdicionesFragment"
+        android:label="Ediciones">
+        <action
+            android:id="@+id/action_navigation_edicionesFragment_to_navigation_editarLibroFragment"
+            app:destination="@id/navigation_editarLibroFragment" />
+        <argument
+            android:name="obra"
+            android:defaultValue="@null"
+            app:argType="igz.tfg.bookmarker.modelos.openlibrary.ObraOL"
+            app:nullable="true" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/nuevaSeccionDialogFragment"
+        android:name="igz.tfg.bookmarker.ui.crearSecccion.NuevaSeccionDialogFragment"
+        android:label="Nueva seccion"
+        tools:layout="@layout/fragment_nueva_seccion_dialog" />
+    <fragment
+        android:id="@+id/libroFragment"
+        android:name="igz.tfg.bookmarker.ui.libro.LibroFragment"
+        android:label="LibroFragment">
+        <action
+            android:id="@+id/action_libroFragment_to_navigation_editarLibroFragment"
+            app:destination="@id/navigation_editarLibroFragment" />
+        <argument
+            android:name="idLibro"
+            android:defaultValue="-1L"
+            app:argType="long" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_info"
+        android:name="igz.tfg.bookmarker.ui.ajustes.InfoFragment"
+        android:label="Información"
+        tools:layout="@layout/fragment_info" />
+</navigation>

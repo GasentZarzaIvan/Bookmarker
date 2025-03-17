@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/opc_nueva_seccion"
+        android:icon="@drawable/ic_add_seccion_24"
+        android:title="@string/titulo_opc_nueva_seccion"
+        app:showAsAction="collapseActionView|ifRoom" />
+    <item
+        android:id="@+id/opc_guardar_libro"
+        android:icon="@drawable/ic_save_24"
+        android:title="@string/titulo_opc_guardar_libro"
+        app:showAsAction="collapseActionView|ifRoom" />
+
+</menu>

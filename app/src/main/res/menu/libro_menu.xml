@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/opc_nuevo_marcador"
+        android:icon="@drawable/ic_add_marcador_24"
+        android:title="@string/titulo_opc_nuevo_marcador"
+        app:showAsAction="collapseActionView|ifRoom" />
+    <item
+        android:id="@+id/opc_modificar_libro"
+        android:icon="@drawable/ic_edit_24"
+        android:title="@string/titulo_opc_editar_libro"
+        app:showAsAction="collapseActionView|ifRoom" />
+
+</menu>

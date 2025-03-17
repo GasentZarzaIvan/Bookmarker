@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textAlignment="center">
+
+        <LinearLayout
+            android:id="@+id/lnlNombre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@+id/lnlPagina"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:id="@+id/idNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="Titulo"
+                android:textAlignment="textStart"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/inpNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnlPagina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@id/lnlBotones"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:id="@+id/idPagina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="132"
+                android:textAlignment="textStart"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/inpPagina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="123"
+                android:inputType="number"
+                android:minWidth="60dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnlBotones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/btnCancelar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="Cancelar"
+                android:src="@drawable/ic_close_24" />
+
+            <ImageButton
+                android:id="@+id/btnAceptar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="Aceptar"
+                android:src="@drawable/ic_check_24" />
+
+            <ImageButton
+                android:id="@+id/btnEditar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="Editar"
+                android:src="@drawable/ic_edit_24" />
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

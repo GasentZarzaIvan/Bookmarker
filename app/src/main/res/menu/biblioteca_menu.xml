@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/titulo_opc_nueva_seccion"
+        android:icon="@drawable/ic_add_seccion_24"
+        android:id="@+id/opc_nueva_seccion"
+        app:showAsAction="collapseActionView|ifRoom"/>
+
+    <item android:title="@string/titulo_opc_nuevo_libro"
+        android:icon="@drawable/ic_add_24"
+        android:id="@+id/opc_nuevo_libro"
+        app:showAsAction="collapseActionView|ifRoom"/>
+</menu>

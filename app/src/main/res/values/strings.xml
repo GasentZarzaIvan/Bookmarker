@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Bookmarker</string>
+    <string name="title_biblioteca">Biblioteca</string>
+    <string name="title_buscar">Buscar</string>
+    <string name="title_info">Información</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="titulo_opc_buscador">Buscador</string>
+
+    <string name="seccion_vacia">No hay libros en esta sección</string>
+    <string name="busqueda_obras_vacia">No hay libros a mostrar</string>
+    <string name="busqueda_ediciones_vacia">No hay ediciones a mostrar</string>
+    <string name="busqueda_error">Ha ocurrido un error al hacer la busqueda.\n%1$s</string>
+    <string name="titulo_opc_nueva_seccion">Nueva sección</string>
+    <string name="biblioteca_vacia">No tienes ninguna sección creada</string>
+    <string name="libro_marcadores_vacio">No hay marcadores a mostrar</string>
+    <!-- TODO: añadir textos -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dialog_nueva_seccion_nombre">Nombre de la nueva sección</string>
+    <string name="dialog_nueva_seccion_cancelar">Cancelar</string>
+    <string name="dialog_nueva_seccion_aceptar">Aceptar</string>
+    <string name="dialog_nueva_seccion_titulo">Crear nueva sección</string>
+    <string name="titulo_opc_guardar_libro">Guardar libro</string>
+    <string name="titulo_opc_nuevo_libro">Nuevo libro</string>
+    <string name="titulo_opc_editar_libro">Editar libro</string>
+    <string name="titulo_opc_nuevo_marcador">Nuevo marcador</string>
+    <string name="info_numero_secciones">Número de secciones: %1$d</string>
+    <string name="info_numero_libros">Número de libros: %1$d</string>
+    <string name="info_numero_marcadores">Número de marcadores: %1$d</string>
+</resources>

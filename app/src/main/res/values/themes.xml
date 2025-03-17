@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Bookmarker" parent="@style/Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimaryDay</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariantDay</item>
+        <item name="colorOnPrimary">@color/colorOnPrimaryDay</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/colorSecondaryDay</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantDay</item>
+        <item name="colorOnSecondary">@color/colorOnSecondaryDay</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="colorAccent">@color/colorAccentDay</item>
+        <item name="android:colorAccent">@color/colorAccentDay</item>
+    </style>
+</resources>
