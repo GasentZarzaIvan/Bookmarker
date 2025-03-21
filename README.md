@@ -17,3 +17,6 @@ los libros en distintas secciones.
 Para instalar la aplicación se necesita haber construido un archivo APK a partir del código
 fuente. Este archivo APK puede instalarse en dispositivos Android con una versión igual o superior 
 7.0 y deben tener activada la opción de Orígenes desconocidos en los ajustes de seguridad.
+
+## Documentación
+En la carpeta `doc` se encuentra la documentación realizada para el proyecto, siendo estos el guión, un resumen del proyecto y un archivo txt con la dirección a las diapositivas que se utilizaron en la defensa del proyecto.
